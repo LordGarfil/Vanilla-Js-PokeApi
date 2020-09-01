@@ -1,0 +1,40 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Lexend+Peta&display=swap');
+</style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemon-div{
+    margin: 1em;
+    -webkit-box-shadow: 11px 10px 5px 0px rgba(0,0,0,0.23);
+-moz-box-shadow: 11px 10px 5px 0px rgba(0,0,0,0.23);
+box-shadow: 11px 10px 5px 0px rgba(0,0,0,0.23);
+}
+
+.pokemon-title{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Lexend Peta', sans-serif;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.pokemon-number{
+    border-radius: 50%;
+    padding: 3px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
