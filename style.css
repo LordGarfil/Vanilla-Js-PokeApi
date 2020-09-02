@@ -2,17 +2,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Lexend+Peta&display=swap');
 </style>
 
+:root{
+    --primary-color: rgba(63, 131, 250);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+input{
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+input:focus{
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+button{
+    display: inline-block;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: rgba(32, 113, 255);
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+button:hover{
+    color: white;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(32, 113, 255,.25);
+}
+
+.poke-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em;
+}
+
+.poke-header form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.poke-header form input{
+    margin-right: 1em;
+    width: 250px;
+}
+
+.form-icon{
+    position: relative;
+    width: auto;
+}
+
+.form-icon i{
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    outline: red;
+    top: 10px;
+    right: 20px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.form-icon i:hover{
+    box-shadow: 0 0 0 0.2rem rgba(32, 113, 255,.25);
+}
+
+
 .grid{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    overflow-y: scroll; 
+}
+
+.not-found{
+    font-family: 'Roboto', sans-serif;
 }
 
 .pokemon-div{
@@ -37,4 +134,5 @@ box-shadow: 11px 10px 5px 0px rgba(0,0,0,0.23);
     color: white;
     align-items: center;
     font-family: 'Roboto', sans-serif;
+   
 }
